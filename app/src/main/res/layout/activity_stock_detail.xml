@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/stock_detail_symbol_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/stock_detail_title_placeholder"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/stock_detail_last_price_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/stock_detail_symbol_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/stock_detail_symbol_tv"
+        android:text="@string/stock_detail_value_placeholder"
+        android:textSize="20sp"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/stock_chart"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/stock_detail_symbol_tv"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/buy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/stock_chart"
+        app:layout_constraintTop_toBottomOf="@id/stock_chart"
+        android:text="@string/stock_detail_buy_placeholder"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/sell_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/stock_chart"
+        app:layout_constraintTop_toBottomOf="@id/stock_chart"
+        android:text="@string/stock_detail_sell_placeholder"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buy_btn"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stock_detail_open"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_bid"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_close"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_ask"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_div_yeald"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_p_e"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_mkt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_cap"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_eps"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_ebit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/stock_detail_beta"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/stock_detail_open_placeholder"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

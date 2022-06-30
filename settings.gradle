@@ -1,0 +1,20 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+
+//Ovo gore sam zakomentarisao, da mi ne bi prijavljivao gresku u build.gradle(Project) koji sam menjao. A menjao sam ga
+//zato sto nije hteo da mi prepozna koin, pa sam time sto sam izmenio u build.gradle(Project) resio problem.
+
+rootProject.name = "Nikola_Tadic_rn4419"
+include ':app'

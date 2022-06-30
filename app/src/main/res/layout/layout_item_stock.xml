@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/stock_symbol_and_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_symbol_name_text_holder"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/stock_last_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_last_price_text_holder"
+            android:layout_margin="5dp"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/stock_chart"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

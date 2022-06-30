@@ -1,0 +1,42 @@
+//// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//plugins {
+//    id 'com.android.application' version '7.1.2' apply false
+//    id 'com.android.library' version '7.1.2' apply false
+//    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+//}
+//
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
+
+//dodato
+//Ovo sam dodao zato sto nije hteo da mi prepozna koin iako imam dependency-je u build.gradle(Module)
+buildscript {
+    ext {
+        compose_version = '1.0.1'
+        kotlin_version = "1.5.21"
+    }
+    repositories {
+        google()
+        jcenter() //ne menjati u mavenCentral() zato sto onda ne prepoznaje koin
+        //mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' } //for MPAndroidChart
+        google()
+        jcenter() //ne menjati u mavenCentral() zato sto onda ne prepoznaje koin
+        //mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
